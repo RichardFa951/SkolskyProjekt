@@ -10,7 +10,7 @@ int main()
 
 	do {
 		cout << "++++++++++++++++++++++++++++++" << endl;
-		cout << "BMI" << endl;
+		cout << "Body Mass index" << endl;
 		cout << "++++++++++++++++++++++++++++++" << endl;
 
 
@@ -21,35 +21,37 @@ int main()
 		cin >> vaha;
 
 		BMI = vaha / (vyska * 2);
-		cout << "BMI" << BMI << endl;
 
-		if (BMI < 16);
-		cout << "Kriticky chudy!" << endl;
+		cout << "BMI:" << BMI << endl;
 
-		else if (BMI > 16, BMI < 17);
-		cout << "Priemerne chudy!" << endl;
 
-		else if (BMI > 17, BMI < 18.5);
-		cout << "Mierne chudy!" << endl;
+		if (BMI < 16)
+			cout << "Kriticky chudy!" << endl;
 
-		else if (BMI > 18.5, BMI < 25);
-		cout << "Normalny!" << endl;
+		else if (BMI > 16, BMI < 17)
+			cout << "Priemerne chudy!" << endl;
 
-		else if (BMI > 25, BMI < 30);
-		cout << "Nadváda!" << endl;
+		else if (BMI > 17, BMI < 18.5)
+			cout << "Mierne chudy!" << endl;
 
-		else if (BMI > 30, BMI < 35);
-		cout << "Obezita I stupna!" << endl;
+		else if (BMI > 18.5, BMI < 25)
+			cout << "Normalny!" << endl;
 
-		else if (BMI > 35, BMI < 40);
-		cout << "Obezita II stupna!" << endl;
+		else if (BMI > 25, BMI < 30)
+			cout << "Nadváda!" << endl;
 
-		else if (BMI > 40);
-		cout << "Obezita III stupna!" << endl;
+		else if (BMI > 30, BMI < 35)
+			cout << "Obezita I stupna!" << endl;
+
+		else if (BMI > 35, BMI < 40)
+			cout << "Obezita II stupna!" << endl;
+
+		else if (BMI > 40)
+			cout << "Obezita III stupna!" << endl;
 
 		cout << "Chcete pokracovat? Ak ano stlacte 1 ak nie 2" << endl;
 		cin >> ano;
 	} while (ano == '1');
 
-return 0;
+	return 0;
 }
